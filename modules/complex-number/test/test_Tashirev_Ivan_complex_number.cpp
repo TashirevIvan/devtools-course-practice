@@ -25,7 +25,8 @@ TEST(Tashirev_Ivan_ComplexNumberTest, Division) {
     ComplexNumber num1(re1, im1);
     ComplexNumber num2(re2, im2);
 
-    ComplexNumber res((re1 * re2 + im1 * im2) / (re2 * re2 + im2 * im2), (im1 * re2 - re1 * im2) / (re2 * re2 + im2 * im2));
+    ComplexNumber res((re1 * re2 + im1 * im2) / (re2 * re2 + im2 * im2), 
+        (im1 * re2 - re1 * im2) / (re2 * re2 + im2 * im2));
 
     ASSERT_EQ(res, num1 / num2);
 }
