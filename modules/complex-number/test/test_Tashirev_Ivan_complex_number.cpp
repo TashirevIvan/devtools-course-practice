@@ -6,15 +6,14 @@
 
 #include "include/complex_number.h"
 
-TEST(Tashirev_Ivan_ComplexNumberTest, Equal) {
-    double re1 = 10.15, im1 = 15.35;
-    double re2 = 10.15, im2 = 15.35;
+TEST(Tashirev_Ivan_ComplexNumberTest, Not_Equal) {
+    double re1 = 10.15, im1 = 16.35;
+    double re2 = 1.55, im2 = 20.44;
 
     ComplexNumber num1(re1, im1);
     ComplexNumber num2(re2, im2);
 
-    bool res = num1 = num2;
-
+    bool res = num1 != num2;
     ASSERT_TRUE(res);
 }
 
